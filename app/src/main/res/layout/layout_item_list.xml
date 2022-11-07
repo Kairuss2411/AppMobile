@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AC9393">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/big_dish"
+                android:alpha="0.3"
+                app:tint="#666666" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/big_dish" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/circle"/>
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_right"
+                android:alpha="0.3"
+                android:tint="#666666"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_right"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:src="@drawable/ic_arrow_right"
+                android:tint="@color/blue" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="110dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_vi_tri"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/font_layout_list"
+                    android:gravity="top"
+                    android:text="Vị trí"
+                    android:textAllCaps="true"
+                    android:textColor="#637DF3"
+                    android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="138dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    android:paddingRight="1dp"
+                                    android:text="Thời gian:"
+                                    android:textColor="#989898"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    android:text="..."
+                                    android:textColor="#989898"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="20dp"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:paddingRight="1dp"-->
+<!--                                    android:text="Người cập nhật:"-->
+<!--                                    android:textColor="#989898"-->
+<!--                                    android:textSize="13sp"-->
+<!--                                    android:textStyle="bold" />-->
+
+                                <TextView
+                                    android:id="@+id/txt_user"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    android:text="...."
+                                    android:textColor="#989898"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    android:paddingRight="1dp"
+                                    android:text="Lượng nước:"
+                                    android:textColor="#989898"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_amount_water"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="1"
+                                    android:text="..."
+                                    android:textColor="#989898"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:paddingRight="1dp"
+                                android:text="Độ PH:"/>
+                            <TextView
+                                android:id="@+id/txt_do_PH"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:textSize="13sp"
+                                android:layout_weight="1"
+                                android:text="..."/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:paddingRight="1dp"
+                                android:text="Mực nước:"/>
+                            <TextView
+                                android:id="@+id/txt_muc_nuoc"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:textSize="13sp"
+                                android:layout_weight="1"
+                                android:text="...."/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:paddingRight="1dp"
+                                android:text="Độ mặn:"/>
+                            <TextView
+                                android:id="@+id/txt_do_man"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:textSize="13sp"
+                                android:layout_weight="1"
+                                android:text="..."/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+

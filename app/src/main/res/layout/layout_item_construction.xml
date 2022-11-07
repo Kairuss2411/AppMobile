@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00AC9393">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/big_dish"
+                android:alpha="0.3"
+                app:tint="#666666" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/big_dish" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_ten_cong_trinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/font_layout_list"
+                    android:gravity="top"
+                    android:text="Tên công trình"
+                    android:textAllCaps="true"
+                    android:textColor="#637DF3"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:paddingRight="1dp"
+                                android:text="Kích thức:"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+                            <TextView
+                                android:id="@+id/txt_kich_thuoc"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:textSize="15sp"
+                                android:layout_weight="1"
+                                android:text="..."
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:paddingRight="1dp"
+                                android:text="Cơ quan quản lý:"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+                            <TextView
+                                android:id="@+id/txt_CQ_quan_ly"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:textColor="#989898"
+                                android:textSize="13sp"
+                                android:layout_weight="1"
+                                android:text="...."
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/ic_setting"
+            android:tint="@color/gray"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="270dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/red"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
