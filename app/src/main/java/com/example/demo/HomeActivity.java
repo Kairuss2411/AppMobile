@@ -1,15 +1,15 @@
 package com.example.demo;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Lấy thông tin từ đăng nhập ở Main Activity
+        // Lấy thông tin User ở Shared Preferences từ Main Activity
         SharedPreferences user = getSharedPreferences("user", 0);
         String username = user.getString("username","");
         String password = user.getString("password","");
@@ -105,5 +105,19 @@ public class HomeActivity extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    // Thực hiện sự kiện trở về
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        // Nếu là nút trở về
+        if(keyCode== KeyEvent.KEYCODE_BACK)
+        {
+            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+            finish();
+            startActivity(intent);
+        }
+        return true;
     }
 }

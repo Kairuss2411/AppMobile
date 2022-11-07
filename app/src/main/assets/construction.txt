@@ -1,0 +1,27 @@
+{
+	"construction": [{
+			"id": 1,
+			"tencongtrinh": "Công trình xử lý nước",
+			"kichthuoc": "100x100",
+			"cqquanly": "Cơ quan quản lý A"
+		},
+		{
+			"id": 2,
+			"tencongtrinh": "Công trình ngăn mặn",
+			"kichthuoc": "200x200",
+			"cqquanly": "Cơ quan quản lý B"
+		},
+		{
+			"id": 3,
+			"tencongtrinh": "Công trình ngăn lũ",
+			"kichthuoc": "300x300",
+			"cqquanly": "Cơ quan quản lý C"
+		},
+		{
+			"id": 4,
+			"tencongtrinh": "Công trình ....",
+			"kichthuoc": "400x400",
+			"cqquanly": "Cơ quan quản lý d"
+		}
+	]
+}

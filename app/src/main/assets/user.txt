@@ -1,0 +1,47 @@
+{
+    "user":
+    [{
+        "id": 1,
+        "ho": "Nguyễn Văn",
+        "ten": "Tin",
+        "email": "tin@gmail.com",
+        "sdt": "091234242",
+        "taikhoan": "user1",
+        "matkhau": "1",
+        "chucvu": "User",
+        "tramID": 1
+    },
+    {
+        "id": 2,
+        "ho": "Lê",
+        "ten": "Van",
+        "email": "van312@gmail.com",
+        "sdt": "09423991",
+        "taikhoan": "manager1",
+        "matkhau": "1",
+        "chucvu": "Manager",
+        "tramID": 2
+    },
+    {
+        "id": 3,
+        "ho": "Dinh Van Thanh",
+        "ten": "Phuoc Vu",
+        "email": "vu@gmail.com",
+        "sdt": "8321984",
+        "taikhoan": "operator1",
+        "matkhau": "1",
+        "chucvu": "Operator",
+        "tramID": 1
+    },
+    {
+        "id": 4,
+        "ho": "Nguyễn Đăng",
+        "ten": "Khoa",
+        "email": "khoa@gmail.com",
+        "sdt": "07849824",
+        "taikhoan": "khoa123",
+        "matkhau": "0913668886",
+        "chucvu": "Manager",
+        "tramID": 4
+    }]
+}

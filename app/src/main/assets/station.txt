@@ -1,0 +1,31 @@
+{
+	"station": [{
+		"id": 1,
+		"tentram": "Trạm Phước Long",
+		"toadoX": 10.454534,
+		"toadoY": 10.423432,
+		"wardID": 31876,
+		"constructionID": 1
+	}, {
+		"id": 2,
+		"tentram": "Trạm Hưng Phú",
+		"toadoX": 10.454534,
+		"toadoY": 10.423432,
+		"wardID": 31870,
+		"constructionID": 2
+	}, {
+		"id": 3,
+		"tentram": "Trạm Vĩnh Thanh",
+		"toadoX": 10.454534,
+		"toadoY": 10.423432,
+		"wardID": 31882,
+		"constructionID": 3
+	}, {
+		"id": 4,
+		"tentram": "Trạm Hòa Bình",
+		"toadoX": 10.454534,
+		"toadoY": 10.423432,
+		"wardID": 31891,
+		"constructionID": 4
+	}]
+}

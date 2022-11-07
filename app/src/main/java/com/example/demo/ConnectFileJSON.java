@@ -1,49 +1,165 @@
 package com.example.demo;
 
-
-
-import static android.app.PendingIntent.getActivity;
-
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.content.res.Resources;
-import android.view.View;
 
-import com.google.android.material.internal.ContextUtils;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.io.InputStreamReader;
 
 public class ConnectFileJSON {
-    public static String AssetJSONFile(String filename, Context context) throws IOException {
-        AssetManager manager = context.getAssets();
-        InputStream file = manager.open(filename);
-        byte[] formArray = new byte[file.available()];
-        file.read(formArray);
-        file.close();
-        return new String(formArray);
+
+    private Context mContext;
+
+    public ConnectFileJSON(Context context) {
+        this.mContext = context;
     }
 
-    public void loadJSON (){
-        ArrayList<HashMap<String, String>> formList = new ArrayList<HashMap<String, String>>();
-        Context context = null;
+    // Đọc dữ liệu data User
+    public String readUserData() {
+        String result = null;
+        AssetManager am = mContext.getAssets();
         try {
-            String jsonLocation = AssetJSONFile("data.json", context);
-            JSONObject formArray = (new JSONObject()).getJSONObject("data");
-            String data = formArray.getString("data");
-            String url = formArray.getString("url");
+            InputStream is = am.open("user.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
+        return result;
     }
 
+    // Đọc dữ liệu thông tin dự báo
+    public String readForecastData(){
+        String result = null;
+        AssetManager am = mContext.getAssets();
+        try {
+            InputStream is = am.open("forecast.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
 
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    // Đọc dữ liệu thông tin trạm
+    public String readStationData(){
+        String result = null;
+        AssetManager am = mContext.getAssets();
+        try {
+            InputStream is = am.open("station.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    // Đọc dữ thông tin công trình
+    public String readConstructionData(){
+        String result = null;
+        AssetManager am = mContext.getAssets();
+        try {
+            InputStream is = am.open("construction.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    // Đọc dữ liệu thông tin tỉnh
+    public String readProvinceData(){
+        String result = null;
+        AssetManager am = mContext.getAssets();
+        try {
+            InputStream is = am.open("province.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    // Đọc dữ liệu thông tin huyện
+    public String readDistrictData(){
+        String result = null;
+        AssetManager am = mContext.getAssets();
+        try {
+            InputStream is = am.open("district.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    // Đọc dữ liệu thông tin phường xã
+    public String readWardData(){
+        String result = null;
+        AssetManager am = mContext.getAssets();
+        try {
+            InputStream is = am.open("ward.txt");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String receiveString = "";
+            StringBuilder stringBuilder = new StringBuilder();
+
+            while ( (receiveString = reader.readLine()) != null ) {
+                stringBuilder.append("\n").append(receiveString);
+            }
+            is.close();
+            result = stringBuilder.toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

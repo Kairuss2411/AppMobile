@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ListForecastActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:background="#071b32">
+
             <TextView
                 android:id="@+id/btnAdd"
                 android:layout_width="wrap_content"

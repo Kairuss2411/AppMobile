@@ -1,0 +1,43 @@
+{
+	"forecast": [{
+			"id": 1,
+			"userID": 1,
+			"stationID": 1,
+			"thoigian": "12/4/2002",
+			"luongmua": 2,
+			"mucnuoc": 3,
+			"doman": 4,
+			"doph": 1
+		},
+		{
+			"id": 2,
+			"userID": 2,
+			"stationID": 2,
+			"thoigian": "1/4/2000",
+			"luongmua": 2,
+			"mucnuoc": 3,
+			"doman": 4,
+			"doph": 1
+		},
+		{
+			"id": 3,
+			"userID": 3,
+			"stationID": 3,
+			"thoigian": "12/4/2002",
+			"luongmua": 2,
+			"mucnuoc": 3,
+			"doman": 4,
+			"doph": 1
+		},
+		{
+			"id": 4,
+			"userID": 4,
+			"stationID": 4,
+			"thoigian": "12/4/2002",
+			"luongmua": 2,
+			"mucnuoc": 3,
+			"doman": 4,
+			"doph": 1
+		}
+	]
+}
