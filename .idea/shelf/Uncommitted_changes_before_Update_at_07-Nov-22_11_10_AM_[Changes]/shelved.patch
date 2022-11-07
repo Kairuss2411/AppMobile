@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/example/demo/ConnectionDatabase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.demo;\r\n\r\nimport android.annotation.SuppressLint;\r\nimport android.os.StrictMode;\r\nimport android.util.Log;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\n\r\npublic class ConnectionDatabase {\r\n    Connection con;\r\n    String uname, pass, ip, port, database;\r\n\r\n    @SuppressLint(\"New\")\r\n    public Connection connectionClass()\r\n    {\r\n//        ip = \"localhost\";\r\n        ip = \"172.1.2.0\";\r\n        database = \"AppMobile\";\r\n        uname = \"khoa123\";\r\n        pass = \"12345\";\r\n        port = \"1433\";\r\n\r\n        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();\r\n        StrictMode.setThreadPolicy(policy);\r\n        Connection connection = null;\r\n        String ConnectionURL = null;\r\n\r\n        try{\r\n            Class.forName(\"net.sourceforge.jtds.jdbc.Driver\").newInstance();\r\n            ConnectionURL = \"jdbc:jtds:sqlserver://\"+ip+\":\"+port+\"/\"+database+\";encrypt=fasle;user=\"+uname+\";password=\"+pass+\";instance=SQLEXPRESS;\";\r\n            connection = DriverManager.getConnection(ConnectionURL);\r\n\r\n        }catch (Exception ex)\r\n        {\r\n           Log.e(\"Error\", ex.getMessage());\r\n        }\r\n        return connection;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/demo/ConnectionDatabase.java b/app/src/main/java/com/example/demo/ConnectionDatabase.java
+--- a/app/src/main/java/com/example/demo/ConnectionDatabase.java	(revision 489540da2c1579673f87967dce612fb889ef1a22)
++++ b/app/src/main/java/com/example/demo/ConnectionDatabase.java	(date 1667794226540)
+@@ -37,4 +37,4 @@
+         }
+         return connection;
+     }
+-}
+\ No newline at end of file
++}
