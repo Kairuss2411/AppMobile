@@ -2,31 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txtViewTest"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".AddForecastActivity">
-
-<!--    <TextView-->
-<!--        android:id="@+id/txt_title"-->
-<!--        android:layout_width="212dp"-->
-<!--        android:layout_height="107dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginTop="100dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:layout_marginBottom="700dp"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="32sp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    tools:context=".UpdateUserActivity">
 
     <LinearLayout
         android:layout_width="358dp"
-        android:layout_height="570dp"
+        android:layout_height="640dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="32dp"
@@ -42,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="0dp"
             android:fontFamily="@font/baloo"
-            android:text="CẬP NHẬT DỰ BÁO"
+            android:text="Cập nhật người dùng"
             android:textSize="30dp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -59,11 +41,11 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="15dp"
-            android:hint="Vị trí"
-            app:boxBackgroundColor="@color/white"
-            app:startIconDrawable="@drawable/ic_placeholder64">
+            android:hint="Họ"
+            app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtHo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:backgroundTint="@color/white" />
@@ -77,43 +59,11 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="15dp"
-            android:hint="Thời gian"
-            app:backgroundTint="@color/white"
-            app:startIconDrawable="@drawable/ic_time">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
-            android:hint="Lượng mưa"
-            app:backgroundTint="@color/white"
-            app:startIconDrawable="@drawable/ic_rainy">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
-            android:hint="Độ mặn"
-            app:startIconDrawable="@drawable/ic_salt_water"
+            android:hint="Tên"
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtTen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -125,32 +75,80 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="15dp"
-            android:hint="PH"
-            app:backgroundTint="@color/white"
-            app:startIconDrawable="@drawable/ic_ph">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
-            android:hint="Mực nước"
-            app:startIconDrawable="@drawable/ic_drop"
+            android:hint="Email"
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Số điện thoại"
+            app:backgroundTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtSDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Chức vụ"
+            app:backgroundTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtChucvu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Tài khoản"
+            app:backgroundTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtTaikhoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Mật khẩu"
+            app:backgroundTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtMatkhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -160,13 +158,13 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnUpdate"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="159dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/background_pink"
-                android:text="Lưu"
+                android:text="Cập nhật"
                 android:textColor="@color/white"
                 app:backgroundTint="#418A22" />
 

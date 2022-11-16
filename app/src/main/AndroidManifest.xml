@@ -17,6 +17,13 @@
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateUserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ChartForecastActivity"
             android:exported="false">
             <meta-data

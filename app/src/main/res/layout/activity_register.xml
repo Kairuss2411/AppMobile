@@ -8,22 +8,6 @@
     android:background="@drawable/background"
     tools:context=".AddForecastActivity">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/txt_title"-->
-    <!--        android:layout_width="212dp"-->
-    <!--        android:layout_height="107dp"-->
-    <!--        android:layout_marginStart="32dp"-->
-    <!--        android:layout_marginTop="100dp"-->
-    <!--        android:layout_marginEnd="32dp"-->
-    <!--        android:layout_marginBottom="700dp"-->
-    <!--        android:textColor="@color/white"-->
-    <!--        android:textSize="32sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <LinearLayout
         android:layout_width="358dp"
         android:layout_height="640dp"
@@ -63,6 +47,7 @@
             app:boxBackgroundColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtHo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:backgroundTint="@color/white" />
@@ -80,6 +65,7 @@
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtTen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -95,6 +81,7 @@
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -110,6 +97,7 @@
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtSDT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -125,6 +113,7 @@
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtChucvu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -140,6 +129,7 @@
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtTaikhoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -156,6 +146,7 @@
             app:backgroundTint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtxtMatkhau"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -169,7 +160,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnRegister"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="159dp"
                 android:layout_height="60dp"
@@ -180,7 +171,7 @@
                 app:backgroundTint="#418A22" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnCancel"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="151dp"
                 android:layout_height="60dp"

@@ -3,6 +3,9 @@ package com.example.demo;
 import android.content.Context;
 import android.content.res.AssetManager;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -162,4 +165,41 @@ public class ConnectFileJSON {
         }
         return result;
     }
+
+    // Setup JSONObject Of user
+    public JSONObject makeJsonUser (String title, String desc) {
+
+        JSONObject obj = new JSONObject() ;
+
+        try {
+            obj.put("title", title);
+            obj.put("desc", desc);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return obj;
+    }
+
+    // Setup JSONObject Of forecast
+    public JSONObject makeJsonForecast (int id, int userID, int stationID, String thoigian, int luongmua, int mucnuoc, int doman, int doph) {
+
+        JSONObject obj = new JSONObject() ;
+
+        try {
+            obj.put("id", id);
+            obj.put("userID", userID);
+            obj.put("stationID", stationID);
+            obj.put("thoigian", thoigian);
+            obj.put("luongmua", luongmua);
+            obj.put("mucnuoc", mucnuoc);
+            obj.put("doman", doman);
+            obj.put("doph", doph);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return obj;
+    }
+
+    // Đẩy dữ liệu thông tin dự báo về lại JSON
+
 }

@@ -108,7 +108,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnRegister"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="159dp"
                 android:layout_height="60dp"
@@ -119,7 +119,7 @@
                 app:backgroundTint="#418A22" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnCancel"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="151dp"
                 android:layout_height="60dp"
